@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS.Rony Sorker's Port</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .circle {
+            height: 600px;
+            width: 600px;
+            background-color: rgb(255, 246, 127);
+            background-image: url('./imgs/me.png');
+            object-fit: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 40px solid rgb(224, 66, 255);
+            border-radius: 50%;
+            box-shadow: 0px 0px 50px rgb(224, 66, 255);
+            position: absolute;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+            transition: 0.7s;
+            z-index: -1;
+        }
+        .circle:hover {
+            background-color: rgb(255, 246, 127);
+            box-shadow: 0px 0px 50px rgb(224, 66, 255), inset rgba(189, 47, 245, 0.5) 0px 0px 40px 0px, rgba(233, 62, 255, 0.3) 0px 30px 100px -24px;
+        }
+        .links .container{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container img{
+            width: 50%;
+            height: 50%;
+        }
+
+        .face{
+            width: 50%;
+            height: 50%;
+        }
+        .gmial{
+            width: 50%;
+            height: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
+        <!-- background-circle -->
+        <div class="circle">
+        </div>
+        <!-- links -->
+        <div class="links">
+            <div class="container">
+                <div class="face">
+                    <img src="imgs/icons/facebookk.png" alt="">
+                </div>
+                <div class="gmail">
+                    <img src="imgs/icons/gmail.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
