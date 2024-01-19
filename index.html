@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+
     <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet"> -->
     <!-- tailwind and daisy ui -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
@@ -13,16 +16,24 @@
 
     <title>Portfolio_Of_Rony_Sorker</title>
     <style>
-        *{
+        * {
             background-color: black;
+            font-family: 'Playfair Display', serif;
+
         }
-        .primary_font{
+        body{
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        .primary_font {
             font-family: 'Playfair Display', serif;
         }
-        .circle{
+
+        .circle {
             height: 600px;
             width: 600px;
-            background-color: rgb(198, 172, 228);
+            background-color: rgb(217, 186, 253);
             background-image: url('./imgs/me.png');
             object-fit: cover;
             background-size: cover;
@@ -34,38 +45,51 @@
             bottom: 50%;
             right: 50%;
             transform: translate(50%, 50%);
+            transition: 0.7s;
         }
-        .circle:hover{
-            box-shadow: inset rgb(224, 66, 255) 0px 0px 40px 0px, inset rgb(224, 66, 255) 0px 0px 40px 0px, inset rgb(224, 66, 255) 0px 0px 36px -24px;
-            filter: saturate(0);
-        }
-        
-        .top{
-            display: flex;
-            justify-content: space-between;
+        .circle:hover {
+            background-color: rgb(255, 246, 127);
+            box-shadow: 0px 0px 50px rgb(224, 66, 255), inset rgba(189, 47, 245, 0.5) 0px 0px 40px 0px, rgba(233, 62, 255, 0.3) 0px 30px 100px -24px;
 
         }
-        .logo_1{
-            border-right: 20px solid red;
+        .logo_1 {
+            display: flex;
+            margin: auto; 
+            cursor: pointer;
         }
-        .name{
+        .name {
             color: white;
-            font-size: 5rem;
+            font-size: 25px;
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35%;
+        }
+        .links img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
         }
     </style>
 </head>
+
 <body>
     <main>
         <div class="top">
             <div class="logo">
-                <img class="logo_1" src="imgs/logo.png" alt="">
+                <img title="MD.Rony Sorker" class="logo_1" src="imgs/logo.png" alt="">
             </div>
-            <div class="name">MD.RONY SORKER</div>
         </div>
-
         <div class="circle">
+        </div>
+        <div class="links">
+            <a href=""><img src="imgs/icons/facebook.jpg" alt=""></a>
+            <a href=""><img src="imgs/icons/google.jpg" alt=""></a>
         </div>
     </main>
 
+
 </body>
+
 </html>
