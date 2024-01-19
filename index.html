@@ -6,9 +6,9 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet"> -->
     <!-- tailwind and daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Portfolio_Of_Rony_Sorker</title>
@@ -20,18 +20,47 @@
             font-family: 'Playfair Display', serif;
         }
         .circle{
-            
+            height: 600px;
+            width: 600px;
+            background-color: rgb(198, 172, 228);
+            background-image: url('./imgs/me.png');
+            object-fit: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 40px solid rgb(224, 66, 255);
+            border-radius: 50%;
+            box-shadow: 0px 0px 50px rgb(224, 66, 255);
+            position: absolute;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
         }
+        .circle:hover{
+            box-shadow: inset rgb(224, 66, 255) 0px 0px 40px 0px, inset rgb(224, 66, 255) 0px 0px 40px 0px, inset rgb(224, 66, 255) 0px 0px 36px -24px;
+            filter: saturate(0);
+        }
+        
+        .top{
+            display: flex;
+            justify-content: space-between;
 
+        }
+        .logo_1{
+            border-right: 20px solid red;
+        }
+        .name{
+            color: white;
+            font-size: 5rem;
+        }
     </style>
 </head>
 <body>
     <main>
         <div class="top">
             <div class="logo">
-                <img src="imgs/logo.png" alt="">
+                <img class="logo_1" src="imgs/logo.png" alt="">
             </div>
-            <div class="name"></div>
+            <div class="name">MD.RONY SORKER</div>
         </div>
 
         <div class="circle">
